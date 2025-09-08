@@ -1,5 +1,8 @@
-# Unsupervised_Disease_Detection_Autoencoder
- Unsupervised 2D and 3D Convolutional Autoencoders for early detection of Phytophthora cactorum infection in strawberry leaves using hyperspectral imaging.
+# Exploring Fully Unsupervised Autoencoders for Early Disease Detection in Strawberry Leaves using Hyperspectral Images
+Unsupervised 2D and 3D Convolutional Autoencoders for early detection of Phytophthora cactorum infection in strawberry leaves using hyperspectral imaging.
+
+The full thesis and its results can be found here:
+[KU Leuven - Exploring Fully Unsupervised Autoencoders for Early Disease Detection in Strawberry Leaves using Hyperspectral Images](https://repository.teneo.libis.be/delivery/DeliveryManagerServlet?dps_pid=IE48017380&)
 
 
 # AE3DCNN – Code for 3D CAE
@@ -68,3 +71,18 @@ Each file is thus purpose‐specific and plugged into either the training notebo
 **ROIReflection.py and ROI_diffplants.ipynb**
 
 Files needed to create the spatial-spectral data exploration shown in the thesis
+
+----------------------------------------
+**data_exploration.ipynb and data_quality_checks.ipynb**
+
+Basic data exploration for a general overview and checks of quality. The quality checks investigate the size and wavelength of the images and potential outliers.
+
+
+----------------------------------------
+**pca_experiment.ipynb and pca_dimreduct.ipynb and pca_bandselect.ipynb**
+
+pca_experiment.ipynb experiments with PCA in generall.
+
+pca_dimreduct.ipynb fits a PCA model (on healthy data only) which is saved and later re-used as a dimensionality reduction method before the autoencoder training.
+
+pca_bandselect.ipynb selects the relevant bands as described in teh thesis. It is a final selection of 7 bands.
